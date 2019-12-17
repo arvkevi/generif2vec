@@ -111,23 +111,3 @@ Use [this notebook](notebooks/go_semantic_similarity.ipynb) to compare the resul
 the molecular function branch of the Gene Ontology with [GoSemSim](https://bioconductor.org/packages/devel/bioc/vignettes/GOSemSim/inst/doc/GOSemSim.html).
 
 ![STAT1](figures/stat1_gosemsim_d2v.png)
-
-
-
-I want to share some initial results from a #genomics #machinelearning project that I'm hacking on in my free time. 
-
-
-
-It uses Doc2vec to generate document embeddings from Gene Reference into Function (GeneRIF) annotations provided by the National Center for Biotechnology Information (NCBI). 
-
-I downloaded and embedded over 731,000 PubMed abstracts spanning 7,704 unique genes. 
-
-
-
-The model achieves 
-
-Check out the code here and please share your thoughts on how to improve and/or evaluate the model.
-
-
-
-https://github.com/arvkevi/generif2vec
