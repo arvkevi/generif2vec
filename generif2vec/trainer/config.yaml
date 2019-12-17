@@ -1,0 +1,55 @@
+trainingInput:
+  scaleTier: CUSTOM
+  masterType: n1-highmem-4
+  workerType: n1-highmem-4
+  parameterServerType: n1-highmem-4
+  hyperparameters:
+    goal: MAXIMIZE
+    maxParallelTrials: 5
+    maxTrials: 150
+    hyperparameterMetricTag: top_k_accuracy
+    enableTrialEarlyStopping: TRUE
+    params:
+    - parameterName: epochs
+      type: DISCRETE
+      discreteValues: [
+                        1,
+                        10,
+                        20,
+                        30,
+                        40,
+      ]
+    - parameterName: dm
+      type: DISCRETE
+      discreteValues: [
+                        0,
+                        1,
+      ]
+    - parameterName: negative
+      type: DISCRETE
+      discreteValues: [
+                        5,
+                        10,
+                        15,
+      ]
+    - parameterName: min_count
+      type: DISCRETE
+      discreteValues: [
+                        2,
+                        5,
+      ]
+    - parameterName: hs
+      type: DISCRETE
+      discreteValues: [
+                        0,
+                        1,
+      ]
+    - parameterName: sample
+      type: DISCRETE
+      scaleType: UNIT_LINEAR_SCALE
+      discreteValues: [
+                        0.0,
+                        0.0001,
+                        0.01,
+                        0.1,
+      ]

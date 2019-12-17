@@ -1,0 +1,16 @@
+biopython
+biothings_client
+cloudml-hypertune
+gcsfs
+gensim
+loguru
+joblib
+numpy
+pandas
+python-dateutil==2.8
+fire
+scikit-learn
+scipy
+spacy
+streamlit
+umap-learn
